@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+</head>
+<body bgcolor="#fff8dc">
+<table border="2">
+    <tr>
+        <th>pid</th>
+        <th>pname</th>
+        <th>pcost</th>
+        <th>pmfd</th>
+        <th>pexpdt</th>
+    </tr>
+    {%  for rec in records %}
+        <tr>
+        <td>{{ rec.pid }}</td>
+        <td>{{ rec.pname }}</td>
+        <td>{{ rec.pcost }}</td>
+        <td>{{ rec.pmfd }}</td>
+        <td>{{ rec.pexpdt }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<a href="/datadisplayapp">click here to display anthoer product</a>
+
+</body>
+</html>
